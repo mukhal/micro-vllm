@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+dev-ignore/
+report.md
+eval_bundle/
+models/
+.cache/
+.nanochat/
+
+# Secrets
+.env
+
+# Local setup
+CLAUDE.md
+wandb/
