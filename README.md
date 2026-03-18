@@ -1,8 +1,11 @@
-# microvllm
+# Micro-vLLM
 
-This is minimal vLLM-style inference with **paged attention**: a small, readable engine for running LLM inference with block-managed KV cache. No training, no serving stack—just the core inference loop.
+This is minimal vLLM-style inference with [**paged attention**](https://arxiv.org/abs/2309.06180): a small, readable engine for running LLM inference with block-managed KV cache. No training, no serving stack—just the core inference loop.
 
 I liked [nano-vllm](https://github.com/GeeeekExplorer/nano-vllm) a lot, but found it to be a bit more complicated than I liked, especially for someone looking to deeply understand LLM inference and play with KV cache memory management. I built this around [Karpathy's nanochat](https://github.com/karpathy/nanochat), so the model logic is also as simple as it can be--also especially that NanoChat KV cache uses contiguous memory allocation. 
+
+## Disclaimer
+This is for educational/fun purposes only and it's not optimized for production.  
 
 ## Install
 
@@ -87,6 +90,8 @@ microvllm/
 - `xxhash`
 - `numpy`
 - optional: `tqdm` for progress in `generate()`
+
+
 
 ## License
 
